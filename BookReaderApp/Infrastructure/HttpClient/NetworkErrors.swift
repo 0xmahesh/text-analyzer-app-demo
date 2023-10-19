@@ -10,12 +10,3 @@ import Foundation
 enum NetworkErrors: Error {
     case invalidUrl
 }
-
-final class FileDownloader: FileDownloaderProtocol {
-    var delegate: URLSessionDownloadDelegate?
-    
-    func downloadFile(at url: String) async throws {
-        
-    }
-    
-}
