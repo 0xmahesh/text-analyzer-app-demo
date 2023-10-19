@@ -26,6 +26,10 @@
 		3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC68B2AE16AA700F9A5E9 /* FileHandler.swift */; };
 		3DDFC68E2AE16ADF00F9A5E9 /* WordProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC68D2AE16ADF00F9A5E9 /* WordProcessor.swift */; };
 		3DDFC6902AE16B1E00F9A5E9 /* ScrabbleScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC68F2AE16B1E00F9A5E9 /* ScrabbleScorer.swift */; };
+		3DDFC6952AE16B8400F9A5E9 /* FileHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6922AE16B8400F9A5E9 /* FileHandlerTests.swift */; };
+		3DDFC6962AE16B8400F9A5E9 /* ScrabbleScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6932AE16B8400F9A5E9 /* ScrabbleScorerTests.swift */; };
+		3DDFC6972AE16B8400F9A5E9 /* WordProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */; };
+		3DDFC6992AE16B9A00F9A5E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		3DDFC68B2AE16AA700F9A5E9 /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		3DDFC68D2AE16ADF00F9A5E9 /* WordProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordProcessor.swift; sourceTree = "<group>"; };
 		3DDFC68F2AE16B1E00F9A5E9 /* ScrabbleScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleScorer.swift; sourceTree = "<group>"; };
+		3DDFC6922AE16B8400F9A5E9 /* FileHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandlerTests.swift; sourceTree = "<group>"; };
+		3DDFC6932AE16B8400F9A5E9 /* ScrabbleScorerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrabbleScorerTests.swift; sourceTree = "<group>"; };
+		3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordProcessorTests.swift; sourceTree = "<group>"; };
+		3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,7 @@
 		3DDFC6442AE15C5200F9A5E9 /* BookReaderAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6912AE16B5D00F9A5E9 /* TextProcessingKitTests */,
 				3DDFC6452AE15C5200F9A5E9 /* BookReaderAppTests.swift */,
 			);
 			path = BookReaderAppTests;
@@ -284,6 +293,7 @@
 		3DDFC66D2AE167C100F9A5E9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -369,6 +379,16 @@
 				3DDFC68F2AE16B1E00F9A5E9 /* ScrabbleScorer.swift */,
 			);
 			path = ScrabbleScorer;
+			sourceTree = "<group>";
+		};
+		3DDFC6912AE16B5D00F9A5E9 /* TextProcessingKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6922AE16B8400F9A5E9 /* FileHandlerTests.swift */,
+				3DDFC6932AE16B8400F9A5E9 /* ScrabbleScorerTests.swift */,
+				3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */,
+			);
+			path = TextProcessingKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +526,7 @@
 				3DDFC6352AE15C5000F9A5E9 /* BookReaderAppApp.swift in Sources */,
 				3DDFC6882AE16A6C00F9A5E9 /* FileHandlerProtocol.swift in Sources */,
 				3DDFC6762AE1689200F9A5E9 /* FileRepositoryProtocol.swift in Sources */,
+				3DDFC6992AE16B9A00F9A5E9 /* Constants.swift in Sources */,
 				3DDFC6772AE1689200F9A5E9 /* WordProcessable.swift in Sources */,
 				3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */,
 				3DDFC6902AE16B1E00F9A5E9 /* ScrabbleScorer.swift in Sources */,
@@ -522,6 +543,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDFC6962AE16B8400F9A5E9 /* ScrabbleScorerTests.swift in Sources */,
+				3DDFC6952AE16B8400F9A5E9 /* FileHandlerTests.swift in Sources */,
+				3DDFC6972AE16B8400F9A5E9 /* WordProcessorTests.swift in Sources */,
 				3DDFC6462AE15C5200F9A5E9 /* BookReaderAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
