@@ -80,5 +80,10 @@ final class AppDIContainer: ObservableObject {
         return vm
     }
     
+    func makeResultsViewModel(url: String) -> ResultsViewModel {
+        let vm = ResultsViewModel(urlStr: url, fetchBookInfoUseCase: fetchBookInfoUseCase)
+        return vm
+    }
+    
 
 }

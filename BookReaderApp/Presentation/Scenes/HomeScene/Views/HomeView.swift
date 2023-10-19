@@ -126,7 +126,7 @@ struct HomeView: View {
             .navigationDestination(for: Screens.self) { screen in
                 switch screen {
                 case .results:
-                    Text("Results view")
+                    ResultsView(viewModel: dependencyProvider.makeResultsViewModel(url: urlInput))
                 case .history:
                     Text("History view")
                 default:

@@ -48,6 +48,10 @@
 		3DDFC6C02AE1727900F9A5E9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6BF2AE1727900F9A5E9 /* HomeViewModel.swift */; };
 		3DDFC6C22AE1729700F9A5E9 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C12AE1729700F9A5E9 /* AppDIContainer.swift */; };
 		3DDFC6C42AE1736400F9A5E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C32AE1736400F9A5E9 /* Extensions.swift */; };
+		3DDFC6C82AE174FA00F9A5E9 /* ScrabbleScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C52AE174FA00F9A5E9 /* ScrabbleScoreView.swift */; };
+		3DDFC6C92AE174FA00F9A5E9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C62AE174FA00F9A5E9 /* CardView.swift */; };
+		3DDFC6CA2AE174FA00F9A5E9 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C72AE174FA00F9A5E9 /* ResultsView.swift */; };
+		3DDFC6CC2AE1750300F9A5E9 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6CB2AE1750300F9A5E9 /* ResultsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		3DDFC6BF2AE1727900F9A5E9 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3DDFC6C12AE1729700F9A5E9 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		3DDFC6C32AE1736400F9A5E9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3DDFC6C52AE174FA00F9A5E9 /* ScrabbleScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrabbleScoreView.swift; sourceTree = "<group>"; };
+		3DDFC6C62AE174FA00F9A5E9 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3DDFC6C72AE174FA00F9A5E9 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		3DDFC6CB2AE1750300F9A5E9 /* ResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +354,9 @@
 		3DDFC6702AE167E500F9A5E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6C62AE174FA00F9A5E9 /* CardView.swift */,
+				3DDFC6C72AE174FA00F9A5E9 /* ResultsView.swift */,
+				3DDFC6C52AE174FA00F9A5E9 /* ScrabbleScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +364,7 @@
 		3DDFC6712AE167EA00F9A5E9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6CB2AE1750300F9A5E9 /* ResultsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -592,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDFC6C22AE1729700F9A5E9 /* AppDIContainer.swift in Sources */,
+				3DDFC6CA2AE174FA00F9A5E9 /* ResultsView.swift in Sources */,
 				3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */,
 				3DDFC68A2AE16A9600F9A5E9 /* WordInfo.swift in Sources */,
 				3DDFC69F2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift in Sources */,
@@ -604,6 +617,8 @@
 				3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */,
 				3DDFC6B52AE170CA00F9A5E9 /* StandardFetchAllBooksUseCase.swift in Sources */,
 				3DDFC6902AE16B1E00F9A5E9 /* ScrabbleScorer.swift in Sources */,
+				3DDFC6C82AE174FA00F9A5E9 /* ScrabbleScoreView.swift in Sources */,
+				3DDFC6C92AE174FA00F9A5E9 /* CardView.swift in Sources */,
 				3DDFC6BD2AE1726C00F9A5E9 /* HomeView.swift in Sources */,
 				3DDFC6A32AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift in Sources */,
 				3DDFC6BE2AE1726C00F9A5E9 /* PillShapedButtonView.swift in Sources */,
@@ -624,6 +639,7 @@
 				3DDFC6C02AE1727900F9A5E9 /* HomeViewModel.swift in Sources */,
 				3DDFC6C42AE1736400F9A5E9 /* Extensions.swift in Sources */,
 				3DDFC69D2AE16D4B00F9A5E9 /* Book.swift in Sources */,
+				3DDFC6CC2AE1750300F9A5E9 /* ResultsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
