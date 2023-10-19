@@ -18,7 +18,6 @@ struct HomeView: View {
     private let dependencyProvider: AppDIContainer
     
     @StateObject private var viewModel: HomeViewModel
-    @State private var urlInput: String = ""
     
     init(dependencyProvider: AppDIContainer) {
         self.dependencyProvider = dependencyProvider
@@ -34,12 +33,12 @@ struct HomeView: View {
                     .font(.title)
                     .padding(.top, 100)
                 
-                TextField("Enter URL here...", text: $urlInput)
+                TextField("Enter URL here...", text: $viewModel.urlInput)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(20)
                     .cornerRadius(10)
                     .padding(.top, 10)
-                    .onChange(of: urlInput, initial: false) {
+                    .onChange(of: viewModel.urlInput, initial: false) {
                         _,_  in
                             viewModel.filePath = nil
                             viewModel.fileName = nil
@@ -49,13 +48,13 @@ struct HomeView: View {
                 Button(action: {
                     viewModel.isUnsupportedFileFormat = false
                     
-                    if urlInput.isEmpty || !urlInput.isValidUrl {
+                    if viewModel.urlInput.isEmpty || !viewModel.urlInput.isValidUrl {
                         viewModel.showAlert = true
                     } else {
                         viewModel.isButtonDisabled = true
                         viewModel.isDownloading = true
                         Task {
-                            let _ = await viewModel.fetchFile(at: urlInput)
+                            let _ = await viewModel.fetchFile(at: viewModel.urlInput)
                         }
                     }
                 }) {
@@ -126,7 +125,7 @@ struct HomeView: View {
             .navigationDestination(for: Screens.self) { screen in
                 switch screen {
                 case .results:
-                    ResultsView(dependencyProvider: dependencyProvider, url: urlInput)
+                    ResultsView(dependencyProvider: dependencyProvider, url: viewModel.urlInput)
                 case .history:
                     HistoryView(dependencyProvider: dependencyProvider)
                 default:
@@ -135,10 +134,10 @@ struct HomeView: View {
             }
         }
         .alert(isPresented: $viewModel.showAlert) {
-            if urlInput.isEmpty {
+            if viewModel.urlInput.isEmpty {
                 return Alert(title: Text(""), message: Text("Please enter a URL."), dismissButton: .default(Text("OK")))
             } 
-            else if !urlInput.isValidUrl {
+            else if !viewModel.urlInput.isValidUrl {
                 return Alert(
                     title: Text("Error"),
                     message: Text("Please enter a valid URL."),

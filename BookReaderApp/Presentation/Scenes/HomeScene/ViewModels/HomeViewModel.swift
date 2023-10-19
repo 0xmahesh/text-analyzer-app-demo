@@ -8,6 +8,7 @@
 import Foundation
 
 final class HomeViewModel: NSObject, ObservableObject {
+    @Published var urlInput: String = ""
     @Published var isDownloading = false
     @Published var isProcessing = false
     @Published var isButtonDisabled = false
@@ -19,7 +20,6 @@ final class HomeViewModel: NSObject, ObservableObject {
     @Published var isUnsupportedFileFormat: Bool = false
     
     private var fileManager: FileManager = .default
-    private var urlInput: String = ""
     private var fetchFileUseCase: FetchFileUseCaseProtocol?
     private var processFileUseCase: ProcessFileUseCaseProtocol?
     private var persistBookInfoUseCase: PersistBookInfoUseCaseProtocol?
@@ -77,7 +77,7 @@ extension HomeViewModel {
         self.fileName = nil
         self.filePath = nil
         
-        self.urlInput = url
+        //self.urlInput = url
         do {
             if let result = try await fetchFileUseCase?.execute(with: url, delegate: self) {
                 if result.0 {
