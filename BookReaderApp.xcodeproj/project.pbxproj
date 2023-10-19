@@ -30,6 +30,7 @@
 		3DDFC6962AE16B8400F9A5E9 /* ScrabbleScorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6932AE16B8400F9A5E9 /* ScrabbleScorerTests.swift */; };
 		3DDFC6972AE16B8400F9A5E9 /* WordProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */; };
 		3DDFC6992AE16B9A00F9A5E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */; };
+		3DDFC69B2AE16C4F00F9A5E9 /* DictionaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC69A2AE16C4F00F9A5E9 /* DictionaryStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		3DDFC6932AE16B8400F9A5E9 /* ScrabbleScorerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrabbleScorerTests.swift; sourceTree = "<group>"; };
 		3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordProcessorTests.swift; sourceTree = "<group>"; };
 		3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3DDFC69A2AE16C4F00F9A5E9 /* DictionaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 		3DDFC67D2AE1692E00F9A5E9 /* PersistenceClient */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC69A2AE16C4F00F9A5E9 /* DictionaryStorage.swift */,
 			);
 			path = PersistenceClient;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				3DDFC6792AE168B800F9A5E9 /* ScrabbleWordScorable.swift in Sources */,
 				3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */,
 				3DDFC67B2AE168E600F9A5E9 /* FileRepository.swift in Sources */,
+				3DDFC69B2AE16C4F00F9A5E9 /* DictionaryStorage.swift in Sources */,
 				3DDFC6832AE1697A00F9A5E9 /* NetworkErrors.swift in Sources */,
 				3DDFC68E2AE16ADF00F9A5E9 /* WordProcessor.swift in Sources */,
 			);
