@@ -7,8 +7,6 @@
 
 import Foundation
 
-typealias WordInfoDict = [String: WordInfo]
-
 protocol FileHandlerProtocol {
     func processTextFile(at filePath: URL, filename: String) async -> (Bool, WordInfoDict?)
 }

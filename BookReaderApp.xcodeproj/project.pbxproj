@@ -31,6 +31,14 @@
 		3DDFC6972AE16B8400F9A5E9 /* WordProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */; };
 		3DDFC6992AE16B9A00F9A5E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */; };
 		3DDFC69B2AE16C4F00F9A5E9 /* DictionaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC69A2AE16C4F00F9A5E9 /* DictionaryStorage.swift */; };
+		3DDFC69D2AE16D4B00F9A5E9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC69C2AE16D4B00F9A5E9 /* Book.swift */; };
+		3DDFC69F2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC69E2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift */; };
+		3DDFC6A12AE16D9700F9A5E9 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6A02AE16D9700F9A5E9 /* TypeAliases.swift */; };
+		3DDFC6A32AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6A22AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift */; };
+		3DDFC6A52AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6A42AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift */; };
+		3DDFC6AB2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6AA2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift */; };
+		3DDFC6AD2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6AC2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift */; };
+		3DDFC6AF2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6AE2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,14 @@
 		3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordProcessorTests.swift; sourceTree = "<group>"; };
 		3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3DDFC69A2AE16C4F00F9A5E9 /* DictionaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryStorage.swift; sourceTree = "<group>"; };
+		3DDFC69C2AE16D4B00F9A5E9 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3DDFC69E2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardFetchFileUseCase.swift; sourceTree = "<group>"; };
+		3DDFC6A02AE16D9700F9A5E9 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		3DDFC6A22AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardProcessFileUseCase.swift; sourceTree = "<group>"; };
+		3DDFC6A42AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardPersistBookInfoUseCase.swift; sourceTree = "<group>"; };
+		3DDFC6AA2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistBookInfoUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3DDFC6AC2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessFileUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3DDFC6AE2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFileUseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3DDFC6662AE1653A00F9A5E9 /* Interfaces */,
-				3DDFC6652AE1652800F9A5E9 /* UseCases */,
+				3DDFC6652AE1652800F9A5E9 /* Implementations */,
 				3DDFC6642AE1651E00F9A5E9 /* Entities */,
 			);
 			path = Domain;
@@ -225,24 +241,25 @@
 			isa = PBXGroup;
 			children = (
 				3DDFC6892AE16A9600F9A5E9 /* WordInfo.swift */,
+				3DDFC69C2AE16D4B00F9A5E9 /* Book.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		3DDFC6652AE1652800F9A5E9 /* UseCases */ = {
+		3DDFC6652AE1652800F9A5E9 /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6A92AE16E6800F9A5E9 /* UseCases */,
 			);
-			path = UseCases;
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 		3DDFC6662AE1653A00F9A5E9 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				3DDFC6742AE1689200F9A5E9 /* FileRepositoryProtocol.swift */,
-				3DDFC6752AE1689200F9A5E9 /* WordProcessable.swift */,
-				3DDFC6782AE168B800F9A5E9 /* ScrabbleWordScorable.swift */,
-				3DDFC6872AE16A6C00F9A5E9 /* FileHandlerProtocol.swift */,
+				3DDFC6A82AE16E3A00F9A5E9 /* UseCases */,
+				3DDFC6A72AE16E2700F9A5E9 /* TextProcessingKit */,
+				3DDFC6A62AE16E1E00F9A5E9 /* Repositories */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -296,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				3DDFC6982AE16B9A00F9A5E9 /* Constants.swift */,
+				3DDFC6A02AE16D9700F9A5E9 /* TypeAliases.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -392,6 +410,44 @@
 				3DDFC6942AE16B8400F9A5E9 /* WordProcessorTests.swift */,
 			);
 			path = TextProcessingKitTests;
+			sourceTree = "<group>";
+		};
+		3DDFC6A62AE16E1E00F9A5E9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6742AE1689200F9A5E9 /* FileRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3DDFC6A72AE16E2700F9A5E9 /* TextProcessingKit */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6752AE1689200F9A5E9 /* WordProcessable.swift */,
+				3DDFC6782AE168B800F9A5E9 /* ScrabbleWordScorable.swift */,
+				3DDFC6872AE16A6C00F9A5E9 /* FileHandlerProtocol.swift */,
+			);
+			path = TextProcessingKit;
+			sourceTree = "<group>";
+		};
+		3DDFC6A82AE16E3A00F9A5E9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6AA2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift */,
+				3DDFC6AC2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift */,
+				3DDFC6AE2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3DDFC6A92AE16E6800F9A5E9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6A42AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift */,
+				3DDFC6A22AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift */,
+				3DDFC69E2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,20 +582,28 @@
 			files = (
 				3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */,
 				3DDFC68A2AE16A9600F9A5E9 /* WordInfo.swift in Sources */,
+				3DDFC69F2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift in Sources */,
 				3DDFC6352AE15C5000F9A5E9 /* BookReaderAppApp.swift in Sources */,
 				3DDFC6882AE16A6C00F9A5E9 /* FileHandlerProtocol.swift in Sources */,
 				3DDFC6762AE1689200F9A5E9 /* FileRepositoryProtocol.swift in Sources */,
 				3DDFC6992AE16B9A00F9A5E9 /* Constants.swift in Sources */,
+				3DDFC6A12AE16D9700F9A5E9 /* TypeAliases.swift in Sources */,
 				3DDFC6772AE1689200F9A5E9 /* WordProcessable.swift in Sources */,
 				3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */,
 				3DDFC6902AE16B1E00F9A5E9 /* ScrabbleScorer.swift in Sources */,
+				3DDFC6A32AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift in Sources */,
 				3DDFC67F2AE1696000F9A5E9 /* FileDownloaderProtocol.swift in Sources */,
+				3DDFC6A52AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift in Sources */,
 				3DDFC6792AE168B800F9A5E9 /* ScrabbleWordScorable.swift in Sources */,
 				3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */,
 				3DDFC67B2AE168E600F9A5E9 /* FileRepository.swift in Sources */,
+				3DDFC6AB2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift in Sources */,
 				3DDFC69B2AE16C4F00F9A5E9 /* DictionaryStorage.swift in Sources */,
+				3DDFC6AD2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift in Sources */,
 				3DDFC6832AE1697A00F9A5E9 /* NetworkErrors.swift in Sources */,
 				3DDFC68E2AE16ADF00F9A5E9 /* WordProcessor.swift in Sources */,
+				3DDFC6AF2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift in Sources */,
+				3DDFC69D2AE16D4B00F9A5E9 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
