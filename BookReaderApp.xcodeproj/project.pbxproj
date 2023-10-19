@@ -21,6 +21,9 @@
 		3DDFC67F2AE1696000F9A5E9 /* FileDownloaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC67E2AE1696000F9A5E9 /* FileDownloaderProtocol.swift */; };
 		3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6802AE1696D00F9A5E9 /* FileDownloader.swift */; };
 		3DDFC6832AE1697A00F9A5E9 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6822AE1697A00F9A5E9 /* NetworkErrors.swift */; };
+		3DDFC6882AE16A6C00F9A5E9 /* FileHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6872AE16A6C00F9A5E9 /* FileHandlerProtocol.swift */; };
+		3DDFC68A2AE16A9600F9A5E9 /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6892AE16A9600F9A5E9 /* WordInfo.swift */; };
+		3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC68B2AE16AA700F9A5E9 /* FileHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		3DDFC67E2AE1696000F9A5E9 /* FileDownloaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloaderProtocol.swift; sourceTree = "<group>"; };
 		3DDFC6802AE1696D00F9A5E9 /* FileDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloader.swift; sourceTree = "<group>"; };
 		3DDFC6822AE1697A00F9A5E9 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		3DDFC6872AE16A6C00F9A5E9 /* FileHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandlerProtocol.swift; sourceTree = "<group>"; };
+		3DDFC6892AE16A9600F9A5E9 /* WordInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInfo.swift; sourceTree = "<group>"; };
+		3DDFC68B2AE16AA700F9A5E9 /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,9 @@
 		3DDFC6622AE1606300F9A5E9 /* TextProcessingKit */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6862AE16A3700F9A5E9 /* ScrabbleScorer */,
+				3DDFC6852AE16A2C00F9A5E9 /* WordProcessor */,
+				3DDFC6842AE16A2500F9A5E9 /* FileHandler */,
 			);
 			path = TextProcessingKit;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 		3DDFC6642AE1651E00F9A5E9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6892AE16A9600F9A5E9 /* WordInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -217,6 +227,7 @@
 				3DDFC6742AE1689200F9A5E9 /* FileRepositoryProtocol.swift */,
 				3DDFC6752AE1689200F9A5E9 /* WordProcessable.swift */,
 				3DDFC6782AE168B800F9A5E9 /* ScrabbleWordScorable.swift */,
+				3DDFC6872AE16A6C00F9A5E9 /* FileHandlerProtocol.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -330,6 +341,28 @@
 			children = (
 			);
 			path = PersistenceClient;
+			sourceTree = "<group>";
+		};
+		3DDFC6842AE16A2500F9A5E9 /* FileHandler */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC68B2AE16AA700F9A5E9 /* FileHandler.swift */,
+			);
+			path = FileHandler;
+			sourceTree = "<group>";
+		};
+		3DDFC6852AE16A2C00F9A5E9 /* WordProcessor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WordProcessor;
+			sourceTree = "<group>";
+		};
+		3DDFC6862AE16A3700F9A5E9 /* ScrabbleScorer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScrabbleScorer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,9 +496,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */,
+				3DDFC68A2AE16A9600F9A5E9 /* WordInfo.swift in Sources */,
 				3DDFC6352AE15C5000F9A5E9 /* BookReaderAppApp.swift in Sources */,
+				3DDFC6882AE16A6C00F9A5E9 /* FileHandlerProtocol.swift in Sources */,
 				3DDFC6762AE1689200F9A5E9 /* FileRepositoryProtocol.swift in Sources */,
 				3DDFC6772AE1689200F9A5E9 /* WordProcessable.swift in Sources */,
+				3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */,
 				3DDFC67F2AE1696000F9A5E9 /* FileDownloaderProtocol.swift in Sources */,
 				3DDFC6792AE168B800F9A5E9 /* ScrabbleWordScorable.swift in Sources */,
 				3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */,
