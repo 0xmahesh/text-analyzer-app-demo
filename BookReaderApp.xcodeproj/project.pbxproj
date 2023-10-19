@@ -14,6 +14,13 @@
 		3DDFC6462AE15C5200F9A5E9 /* BookReaderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6452AE15C5200F9A5E9 /* BookReaderAppTests.swift */; };
 		3DDFC6502AE15C5200F9A5E9 /* BookReaderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC64F2AE15C5200F9A5E9 /* BookReaderAppUITests.swift */; };
 		3DDFC6522AE15C5200F9A5E9 /* BookReaderAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6512AE15C5200F9A5E9 /* BookReaderAppUITestsLaunchTests.swift */; };
+		3DDFC6762AE1689200F9A5E9 /* FileRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6742AE1689200F9A5E9 /* FileRepositoryProtocol.swift */; };
+		3DDFC6772AE1689200F9A5E9 /* WordProcessable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6752AE1689200F9A5E9 /* WordProcessable.swift */; };
+		3DDFC6792AE168B800F9A5E9 /* ScrabbleWordScorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6782AE168B800F9A5E9 /* ScrabbleWordScorable.swift */; };
+		3DDFC67B2AE168E600F9A5E9 /* FileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC67A2AE168E600F9A5E9 /* FileRepository.swift */; };
+		3DDFC67F2AE1696000F9A5E9 /* FileDownloaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC67E2AE1696000F9A5E9 /* FileDownloaderProtocol.swift */; };
+		3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6802AE1696D00F9A5E9 /* FileDownloader.swift */; };
+		3DDFC6832AE1697A00F9A5E9 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6822AE1697A00F9A5E9 /* NetworkErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		3DDFC64B2AE15C5200F9A5E9 /* BookReaderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReaderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDFC64F2AE15C5200F9A5E9 /* BookReaderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReaderAppUITests.swift; sourceTree = "<group>"; };
 		3DDFC6512AE15C5200F9A5E9 /* BookReaderAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReaderAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DDFC6742AE1689200F9A5E9 /* FileRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileRepositoryProtocol.swift; sourceTree = "<group>"; };
+		3DDFC6752AE1689200F9A5E9 /* WordProcessable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordProcessable.swift; sourceTree = "<group>"; };
+		3DDFC6782AE168B800F9A5E9 /* ScrabbleWordScorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleWordScorable.swift; sourceTree = "<group>"; };
+		3DDFC67A2AE168E600F9A5E9 /* FileRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileRepository.swift; sourceTree = "<group>"; };
+		3DDFC67E2AE1696000F9A5E9 /* FileDownloaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloaderProtocol.swift; sourceTree = "<group>"; };
+		3DDFC6802AE1696D00F9A5E9 /* FileDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloader.swift; sourceTree = "<group>"; };
+		3DDFC6822AE1697A00F9A5E9 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +177,8 @@
 		3DDFC6612AE1605800F9A5E9 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC67D2AE1692E00F9A5E9 /* PersistenceClient */,
+				3DDFC67C2AE1690300F9A5E9 /* HttpClient */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -198,6 +214,9 @@
 		3DDFC6662AE1653A00F9A5E9 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6742AE1689200F9A5E9 /* FileRepositoryProtocol.swift */,
+				3DDFC6752AE1689200F9A5E9 /* WordProcessable.swift */,
+				3DDFC6782AE168B800F9A5E9 /* ScrabbleWordScorable.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -205,6 +224,7 @@
 		3DDFC6672AE1660E00F9A5E9 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC67A2AE168E600F9A5E9 /* FileRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -293,6 +313,23 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3DDFC67C2AE1690300F9A5E9 /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC67E2AE1696000F9A5E9 /* FileDownloaderProtocol.swift */,
+				3DDFC6802AE1696D00F9A5E9 /* FileDownloader.swift */,
+				3DDFC6822AE1697A00F9A5E9 /* NetworkErrors.swift */,
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		3DDFC67D2AE1692E00F9A5E9 /* PersistenceClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistenceClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +464,13 @@
 			files = (
 				3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */,
 				3DDFC6352AE15C5000F9A5E9 /* BookReaderAppApp.swift in Sources */,
+				3DDFC6762AE1689200F9A5E9 /* FileRepositoryProtocol.swift in Sources */,
+				3DDFC6772AE1689200F9A5E9 /* WordProcessable.swift in Sources */,
+				3DDFC67F2AE1696000F9A5E9 /* FileDownloaderProtocol.swift in Sources */,
+				3DDFC6792AE168B800F9A5E9 /* ScrabbleWordScorable.swift in Sources */,
+				3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */,
+				3DDFC67B2AE168E600F9A5E9 /* FileRepository.swift in Sources */,
+				3DDFC6832AE1697A00F9A5E9 /* NetworkErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
