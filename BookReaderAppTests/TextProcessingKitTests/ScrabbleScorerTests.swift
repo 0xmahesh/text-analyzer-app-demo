@@ -9,60 +9,66 @@ import XCTest
 @testable import BookReaderApp
 
 class ScrabbleWordScorerTests: XCTestCase {
-    var scorer: ScrabbleWordScorer!
+    var englishScorer: ScrabbleWordScorer!
+    var chineseScorer: ScrabbleWordScorer!
     
     override func setUp() {
         super.setUp()
-        scorer = ScrabbleWordScorer()
+        let englishAlphabet = ScrabbleAlphabet(
+            language: .english,
+            allowedCodePoints: Constants.englishAlphabetCodePoints,
+            letterScores: Constants.englishAlphabetLetterScores)
+        
+        englishScorer = ScrabbleWordScorer(alphabet: englishAlphabet)
     }
     
-    func testValidWord_hasAScore() async {
-        let score = await scorer.calculateScore(for: "Hello")
+    func testValidEnglishWord_hasAScore() async {
+        let score = await englishScorer.calculateScore(for: "Hello")
         XCTAssertEqual(score, 8)
     }
-    
-    func testValidWordWithDiacritics_scoreIsZero() async {
-        let score = await scorer.calculateScore(for: "Café")
+
+    func testValidEnglishWordWithDiacritics_scoreIsZero() async {
+        let score = await englishScorer.calculateScore(for: "Café")
         XCTAssertEqual(score, 0)
     }
-    
+
     func testEmptyInput_scoreIsZero() async {
-        let score = await scorer.calculateScore(for: "")
+        let score = await englishScorer.calculateScore(for: "")
         XCTAssertEqual(score, 0)
     }
-    
-    func testWordWithHyphens_scoreIsZero() async {
-        let score = await scorer.calculateScore(for: "far-fetched")
+
+    func testEnglishWordWithHyphens_scoreIsZero() async {
+        let score = await englishScorer.calculateScore(for: "far-fetched")
         XCTAssertEqual(score, 0)
     }
-    
-    func testInvalidWord_scoreIsZero() async {
-        let score = await scorer.calculateScore(for: "XYZ123")
+
+    func testInvalidEnglishWord_scoreIsZero() async {
+        let score = await englishScorer.calculateScore(for: "XYZ123")
         XCTAssertEqual(score, 0)
     }
-    
-    func testWordWithDuplicateLetters_hasAscore() async {
-        let score = await scorer.calculateScore(for: "MISSISSIPPI")
+
+    func testEnglishWordWithDuplicateLetters_hasAScore() async {
+        let score = await englishScorer.calculateScore(for: "MISSISSIPPI")
         XCTAssertEqual(score, 17)
     }
-    
-    func testTextwithSpecialCharacters_scoreIsZero() async {
-        let score = await scorer.calculateScore(for: "$500.0")
+
+    func testTextWithSpecialCharacters_scoreIsZero() async {
+        let score = await englishScorer.calculateScore(for: "$500.0")
         XCTAssertEqual(score, 0)
     }
-    
-    func testWordExceedingMaxLength() async {
+
+    func testEnglishWordExceedingMaxLength_scoreIsZero() async {
         let longWord = String(repeating: "A", count: 16) // Scrabble max length is 15
-        let score = await scorer.calculateScore(for: longWord)
+        let score = await englishScorer.calculateScore(for: longWord)
         XCTAssertEqual(score, 0)
     }
     
-    func testPerformance() async {
-        let expectation = expectation(description: "performance test")
+    func testEnglishWordScoringPerformance() async {
+        let expectation = expectation(description: "english scorer performance test")
         measure {
             Task {
                 for _ in 1...1000 {
-                    _ = await scorer.calculateScore(for: "Hello")
+                    _ = await englishScorer.calculateScore(for: "Hello")
                 }
             }
         }
@@ -70,4 +76,5 @@ class ScrabbleWordScorerTests: XCTestCase {
         await fulfillment(of: [expectation], timeout: 10)
 
     }
+
 }

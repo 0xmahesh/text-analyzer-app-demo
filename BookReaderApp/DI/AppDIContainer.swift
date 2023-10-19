@@ -28,8 +28,24 @@ final class AppDIContainer: ObservableObject {
     }()
     
     //Text-Processing
+    lazy var englishAlphabet: ScrabbleAlphabetConfigurable = {
+        let language: ScrabbleLanguages = .english
+        let allowedCodePoints: Set<Int> = Constants.englishAlphabetCodePoints
+        let letterScores: [Int: Int] = Constants.englishAlphabetLetterScores
+        let alphabet = ScrabbleAlphabet(language: language, allowedCodePoints: allowedCodePoints, letterScores: letterScores)
+        return alphabet
+    }()
+    
+    lazy var chineseAlphabet: ScrabbleAlphabetConfigurable = {
+        let language: ScrabbleLanguages = .chinese
+        let allowedCodePoints: Set<Int> = Constants.chineseAlphabetCodePoints
+        let letterScores: [Int: Int] = Constants.chineseAlphabetLetterScores
+        let alphabet = ScrabbleAlphabet(language: language, allowedCodePoints: allowedCodePoints, letterScores: letterScores)
+        return alphabet
+    }()
+    
     lazy var scrabbleWordScorer: ScrabbleWordScorable = {
-        let scorer = ScrabbleWordScorer()
+        let scorer = ScrabbleWordScorer(alphabet: englishAlphabet)
         return scorer
     }()
     
