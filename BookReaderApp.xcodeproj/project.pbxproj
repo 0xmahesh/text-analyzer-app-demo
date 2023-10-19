@@ -94,6 +94,13 @@
 		3DDFC6332AE15C5000F9A5E9 /* BookReaderApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC66D2AE167C100F9A5E9 /* Common */,
+				3DDFC6632AE1650A00F9A5E9 /* DI */,
+				3DDFC6622AE1606300F9A5E9 /* TextProcessingKit */,
+				3DDFC6612AE1605800F9A5E9 /* Infrastructure */,
+				3DDFC6602AE1604E00F9A5E9 /* Presentation */,
+				3DDFC65F2AE1604900F9A5E9 /* Data */,
+				3DDFC65E2AE1603D00F9A5E9 /* Domain */,
 				3DDFC6342AE15C5000F9A5E9 /* BookReaderAppApp.swift */,
 				3DDFC6362AE15C5000F9A5E9 /* ContentView.swift */,
 				3DDFC6382AE15C5100F9A5E9 /* Assets.xcassets */,
@@ -125,6 +132,167 @@
 				3DDFC6512AE15C5200F9A5E9 /* BookReaderAppUITestsLaunchTests.swift */,
 			);
 			path = BookReaderAppUITests;
+			sourceTree = "<group>";
+		};
+		3DDFC65E2AE1603D00F9A5E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6662AE1653A00F9A5E9 /* Interfaces */,
+				3DDFC6652AE1652800F9A5E9 /* UseCases */,
+				3DDFC6642AE1651E00F9A5E9 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3DDFC65F2AE1604900F9A5E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6672AE1660E00F9A5E9 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3DDFC6602AE1604E00F9A5E9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6682AE1663D00F9A5E9 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3DDFC6612AE1605800F9A5E9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3DDFC6622AE1606300F9A5E9 /* TextProcessingKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextProcessingKit;
+			sourceTree = "<group>";
+		};
+		3DDFC6632AE1650A00F9A5E9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		3DDFC6642AE1651E00F9A5E9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3DDFC6652AE1652800F9A5E9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3DDFC6662AE1653A00F9A5E9 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		3DDFC6672AE1660E00F9A5E9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3DDFC6682AE1663D00F9A5E9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC66B2AE1665C00F9A5E9 /* HistoryScene */,
+				3DDFC66A2AE1665200F9A5E9 /* ResultsScene */,
+				3DDFC6692AE1664100F9A5E9 /* HomeScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3DDFC6692AE1664100F9A5E9 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6732AE167FA00F9A5E9 /* ViewModels */,
+				3DDFC6722AE167F400F9A5E9 /* Views */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		3DDFC66A2AE1665200F9A5E9 /* ResultsScene */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC6712AE167EA00F9A5E9 /* ViewModels */,
+				3DDFC6702AE167E500F9A5E9 /* Views */,
+			);
+			path = ResultsScene;
+			sourceTree = "<group>";
+		};
+		3DDFC66B2AE1665C00F9A5E9 /* HistoryScene */ = {
+			isa = PBXGroup;
+			children = (
+				3DDFC66F2AE167DE00F9A5E9 /* Views */,
+				3DDFC66E2AE167D100F9A5E9 /* ViewModels */,
+			);
+			path = HistoryScene;
+			sourceTree = "<group>";
+		};
+		3DDFC66D2AE167C100F9A5E9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3DDFC66E2AE167D100F9A5E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3DDFC66F2AE167DE00F9A5E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DDFC6702AE167E500F9A5E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DDFC6712AE167EA00F9A5E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3DDFC6722AE167F400F9A5E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DDFC6732AE167FA00F9A5E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
