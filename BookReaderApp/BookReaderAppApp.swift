@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct BookReaderAppApp: App {
+    let dependencyProvider = AppDIContainer()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(dependencyProvider: dependencyProvider)
         }
     }
 }
