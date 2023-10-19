@@ -63,7 +63,7 @@ struct HomeView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
                 .padding(20)
-                .disabled(viewModel.isButtonDisabled)
+                .disabled(viewModel.isButtonDisabled || viewModel.isProcessing)
                 
                 if viewModel.isDownloading && viewModel.filePath == nil {
                     ProgressView("Downloading...", value: viewModel.downloadProgress)
@@ -89,6 +89,7 @@ struct HomeView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     .padding(20)
+                    .disabled(viewModel.isProcessing)
                 }
                 
                 if viewModel.isProcessing {
@@ -110,6 +111,7 @@ struct HomeView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     .padding(20)
+                    .disabled(viewModel.isProcessing)
                 }
                 
                 Spacer()
