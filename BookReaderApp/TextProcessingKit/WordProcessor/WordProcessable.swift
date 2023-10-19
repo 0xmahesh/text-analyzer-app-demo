@@ -11,4 +11,5 @@ protocol WordProcessable {
     func countWords(in line: String) async throws
     func getWordDictionary() async -> WordInfoDict
     func sanitizeWord(_ word: String) -> String
+    func clearWordDictionary() async
 }

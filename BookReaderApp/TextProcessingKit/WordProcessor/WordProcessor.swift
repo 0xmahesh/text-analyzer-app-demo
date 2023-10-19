@@ -22,6 +22,7 @@ actor WordProcessor: WordProcessable {
     }
     
     func countWords(in line: String) async throws {
+        
         let words = try await extractWords(line)
         
         for word in words {
@@ -39,6 +40,10 @@ actor WordProcessor: WordProcessable {
     
     func getWordDictionary() async -> WordInfoDict {
         return wordFrequencyDictionary
+    }
+    
+    func clearWordDictionary() async {
+        wordFrequencyDictionary = [:]
     }
     
     private func extractWords(_ line: String) async throws -> [String] {

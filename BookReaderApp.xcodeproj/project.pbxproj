@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3DDFC6352AE15C5000F9A5E9 /* BookReaderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6342AE15C5000F9A5E9 /* BookReaderAppApp.swift */; };
-		3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6362AE15C5000F9A5E9 /* ContentView.swift */; };
 		3DDFC6392AE15C5100F9A5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFC6382AE15C5100F9A5E9 /* Assets.xcassets */; };
 		3DDFC63C2AE15C5100F9A5E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDFC63B2AE15C5100F9A5E9 /* Preview Assets.xcassets */; };
 		3DDFC6462AE15C5200F9A5E9 /* BookReaderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6452AE15C5200F9A5E9 /* BookReaderAppTests.swift */; };
@@ -81,7 +80,6 @@
 /* Begin PBXFileReference section */
 		3DDFC6312AE15C5000F9A5E9 /* BookReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDFC6342AE15C5000F9A5E9 /* BookReaderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReaderAppApp.swift; sourceTree = "<group>"; };
-		3DDFC6362AE15C5000F9A5E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DDFC6382AE15C5100F9A5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DDFC63B2AE15C5100F9A5E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DDFC6412AE15C5200F9A5E9 /* BookReaderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReaderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,7 +190,6 @@
 				3DDFC65F2AE1604900F9A5E9 /* Data */,
 				3DDFC65E2AE1603D00F9A5E9 /* Domain */,
 				3DDFC6342AE15C5000F9A5E9 /* BookReaderAppApp.swift */,
-				3DDFC6362AE15C5000F9A5E9 /* ContentView.swift */,
 				3DDFC6382AE15C5100F9A5E9 /* Assets.xcassets */,
 				3DDFC63A2AE15C5100F9A5E9 /* Preview Content */,
 			);
@@ -658,7 +655,6 @@
 			files = (
 				3DDFC6C22AE1729700F9A5E9 /* AppDIContainer.swift in Sources */,
 				3DDFC6CA2AE174FA00F9A5E9 /* ResultsView.swift in Sources */,
-				3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */,
 				3DDFC68A2AE16A9600F9A5E9 /* WordInfo.swift in Sources */,
 				3DDFC6D12AE176D500F9A5E9 /* HistoryView.swift in Sources */,
 				3DDFC69F2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift in Sources */,

@@ -165,7 +165,7 @@ class FileHandlerTests: XCTestCase {
 }
 
 private actor MockWordProcessable: WordProcessable {
-    
+
     var wordDictionary: WordInfoDict = [:]
     
     func countWords(in line: String) async {
@@ -184,6 +184,11 @@ private actor MockWordProcessable: WordProcessable {
     func getWordDictionary() -> WordInfoDict {
         return wordDictionary
     }
+    
+    func clearWordDictionary() async {
+        wordDictionary = [:]
+    }
+    
     
     nonisolated func sanitizeWord(_ word: String) -> String {
         return word.trimmingCharacters(in: .whitespacesAndNewlines)

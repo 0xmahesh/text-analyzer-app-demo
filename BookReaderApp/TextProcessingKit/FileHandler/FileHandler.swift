@@ -17,6 +17,12 @@ actor FileHandler: FileHandlerProtocol {
     }
     
     func processTextFile(at filePath: URL, filename: String) async -> (Bool, WordInfoDict?) {
+        defer {
+            Task{
+                await wordCounter.clearWordDictionary()
+            }
+        }
+        
         print("Processing file named: \(filename)")
         do {
             if let fileHandle = try? FileHandle(forReadingFrom: filePath),
