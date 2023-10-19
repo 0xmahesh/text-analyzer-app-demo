@@ -85,5 +85,9 @@ final class AppDIContainer: ObservableObject {
         return vm
     }
     
+    func makeHistoryViewModel() -> HistoryViewModel {
+        let vm = HistoryViewModel(fetchAllBooksUseCase: fetchAllBooksUseCase)
+        return vm
+    }
 
 }

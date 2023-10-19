@@ -52,6 +52,9 @@
 		3DDFC6C92AE174FA00F9A5E9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C62AE174FA00F9A5E9 /* CardView.swift */; };
 		3DDFC6CA2AE174FA00F9A5E9 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6C72AE174FA00F9A5E9 /* ResultsView.swift */; };
 		3DDFC6CC2AE1750300F9A5E9 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6CB2AE1750300F9A5E9 /* ResultsViewModel.swift */; };
+		3DDFC6CE2AE176CC00F9A5E9 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6CD2AE176CC00F9A5E9 /* HistoryViewModel.swift */; };
+		3DDFC6D12AE176D500F9A5E9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6CF2AE176D400F9A5E9 /* HistoryView.swift */; };
+		3DDFC6D22AE176D500F9A5E9 /* HistoryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6D02AE176D400F9A5E9 /* HistoryListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,9 @@
 		3DDFC6C62AE174FA00F9A5E9 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3DDFC6C72AE174FA00F9A5E9 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		3DDFC6CB2AE1750300F9A5E9 /* ResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		3DDFC6CD2AE176CC00F9A5E9 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		3DDFC6CF2AE176D400F9A5E9 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		3DDFC6D02AE176D400F9A5E9 /* HistoryListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +346,7 @@
 		3DDFC66E2AE167D100F9A5E9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6CD2AE176CC00F9A5E9 /* HistoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -347,6 +354,8 @@
 		3DDFC66F2AE167DE00F9A5E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DDFC6D02AE176D400F9A5E9 /* HistoryListItemView.swift */,
+				3DDFC6CF2AE176D400F9A5E9 /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -607,12 +616,15 @@
 				3DDFC6CA2AE174FA00F9A5E9 /* ResultsView.swift in Sources */,
 				3DDFC6372AE15C5000F9A5E9 /* ContentView.swift in Sources */,
 				3DDFC68A2AE16A9600F9A5E9 /* WordInfo.swift in Sources */,
+				3DDFC6D12AE176D500F9A5E9 /* HistoryView.swift in Sources */,
 				3DDFC69F2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift in Sources */,
+				3DDFC6CE2AE176CC00F9A5E9 /* HistoryViewModel.swift in Sources */,
 				3DDFC6352AE15C5000F9A5E9 /* BookReaderAppApp.swift in Sources */,
 				3DDFC6882AE16A6C00F9A5E9 /* FileHandlerProtocol.swift in Sources */,
 				3DDFC6762AE1689200F9A5E9 /* FileRepositoryProtocol.swift in Sources */,
 				3DDFC6992AE16B9A00F9A5E9 /* Constants.swift in Sources */,
 				3DDFC6A12AE16D9700F9A5E9 /* TypeAliases.swift in Sources */,
+				3DDFC6D22AE176D500F9A5E9 /* HistoryListItemView.swift in Sources */,
 				3DDFC6772AE1689200F9A5E9 /* WordProcessable.swift in Sources */,
 				3DDFC68C2AE16AA700F9A5E9 /* FileHandler.swift in Sources */,
 				3DDFC6B52AE170CA00F9A5E9 /* StandardFetchAllBooksUseCase.swift in Sources */,

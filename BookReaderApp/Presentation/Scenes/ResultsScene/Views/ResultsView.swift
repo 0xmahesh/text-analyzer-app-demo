@@ -9,10 +9,12 @@ import Foundation
 import SwiftUI
 
 struct ResultsView: View {
+    private let dependencyProvider: AppDIContainer
     @StateObject private var viewModel: ResultsViewModel
 
-    init(viewModel: ResultsViewModel) {
-        _viewModel = StateObject(wrappedValue: viewModel)
+    init(dependencyProvider: AppDIContainer, url: String) {
+        self.dependencyProvider = dependencyProvider
+        _viewModel = StateObject(wrappedValue: dependencyProvider.makeResultsViewModel(url: url))
     }
     
     var body: some View {
