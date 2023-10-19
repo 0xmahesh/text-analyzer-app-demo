@@ -39,6 +39,8 @@
 		3DDFC6AB2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6AA2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift */; };
 		3DDFC6AD2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6AC2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift */; };
 		3DDFC6AF2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6AE2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift */; };
+		3DDFC6B12AE1703700F9A5E9 /* StandardFetchBookInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6B02AE1703700F9A5E9 /* StandardFetchBookInfoUseCase.swift */; };
+		3DDFC6B32AE1705B00F9A5E9 /* FetchBookInfoUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDFC6B22AE1705B00F9A5E9 /* FetchBookInfoUseCaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		3DDFC6AA2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistBookInfoUseCaseProtocol.swift; sourceTree = "<group>"; };
 		3DDFC6AC2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessFileUseCaseProtocol.swift; sourceTree = "<group>"; };
 		3DDFC6AE2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFileUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3DDFC6B02AE1703700F9A5E9 /* StandardFetchBookInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardFetchBookInfoUseCase.swift; sourceTree = "<group>"; };
+		3DDFC6B22AE1705B00F9A5E9 /* FetchBookInfoUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBookInfoUseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +440,7 @@
 				3DDFC6AA2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift */,
 				3DDFC6AC2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift */,
 				3DDFC6AE2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift */,
+				3DDFC6B22AE1705B00F9A5E9 /* FetchBookInfoUseCaseProtocol.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -446,6 +451,7 @@
 				3DDFC6A42AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift */,
 				3DDFC6A22AE16DD300F9A5E9 /* StandardProcessFileUseCase.swift */,
 				3DDFC69E2AE16D7000F9A5E9 /* StandardFetchFileUseCase.swift */,
+				3DDFC6B02AE1703700F9A5E9 /* StandardFetchBookInfoUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -596,10 +602,12 @@
 				3DDFC6A52AE16DFF00F9A5E9 /* StandardPersistBookInfoUseCase.swift in Sources */,
 				3DDFC6792AE168B800F9A5E9 /* ScrabbleWordScorable.swift in Sources */,
 				3DDFC6812AE1696D00F9A5E9 /* FileDownloader.swift in Sources */,
+				3DDFC6B12AE1703700F9A5E9 /* StandardFetchBookInfoUseCase.swift in Sources */,
 				3DDFC67B2AE168E600F9A5E9 /* FileRepository.swift in Sources */,
 				3DDFC6AB2AE16EE500F9A5E9 /* PersistBookInfoUseCaseProtocol.swift in Sources */,
 				3DDFC69B2AE16C4F00F9A5E9 /* DictionaryStorage.swift in Sources */,
 				3DDFC6AD2AE16F1B00F9A5E9 /* ProcessFileUseCaseProtocol.swift in Sources */,
+				3DDFC6B32AE1705B00F9A5E9 /* FetchBookInfoUseCaseProtocol.swift in Sources */,
 				3DDFC6832AE1697A00F9A5E9 /* NetworkErrors.swift in Sources */,
 				3DDFC68E2AE16ADF00F9A5E9 /* WordProcessor.swift in Sources */,
 				3DDFC6AF2AE16F9B00F9A5E9 /* FetchFileUseCaseProtocol.swift in Sources */,
